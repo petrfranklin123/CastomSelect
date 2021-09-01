@@ -1,0 +1,52 @@
+.select{
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+}
+.select.is-active .select_body{
+    display: block;
+    max-height: 140px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+.select_header{
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+}
+.select_current{
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px;
+}
+.select_icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 40px;
+    margin-left: auto;
+    text-align: center;
+    width: 40px;
+}
+.select_body{
+    border: 1px solid #ccc;
+    border-top: 0;
+    position: absolute;
+    display: none;
+    right: 0;    
+    left: 0;
+    top: 100%;
+}
+.select_item{
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+}
+.select_item:hover{
+    background-color: #f2f2f2;
+}
